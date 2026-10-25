@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Saritas | Malharia, Bordados e Uniformes</title>
+<meta name="description" content="Configure seu pedido de jalecos, scrubs, camisas e fardamentos na Saritas Malharia e Bordados.">
+<style>
+:root{--bg:#062a24;--bg2:#0a3d31;--green:#08a36a;--mint:#baf2d7;--cream:#f4f5ef;--ink:#12352b;--muted:#9fbfb1;--line:#d9e6df}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:#fff}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+.top{padding:9px 0;background:#031b17;color:#c5e5d7;font-size:11px;letter-spacing:1px}.top .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:9;background:#062a24ed;backdrop-filter:blur(10px);border-bottom:1px solid #ffffff1a}.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:16px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:1.5px}.logo{display:grid;place-items:center;width:43px;height:43px;border-radius:50%;background:var(--green);color:#05261f;font-size:22px;overflow:hidden;flex-shrink:0}.logo img{display:block;width:100%;height:100%;object-fit:cover}.brand small{display:block;color:#8ce6bd;font-size:9px;letter-spacing:2px;margin-top:4px}
+.navlinks{display:flex;gap:20px;font-size:12px;color:#d0e5db}.btn{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:30px;background:var(--green);color:#03251b;font-size:12px;font-weight:900;padding:13px 19px;cursor:pointer}.btn:hover{background:#45d99d}
+.hero{padding:65px 0 55px;background:radial-gradient(circle at 85% 20%,#08784e 0,transparent 30%),linear-gradient(120deg,#062a24,#084735)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:#68e1ad;font-weight:900}.hero h1{font-size:clamp(40px,6vw,74px);line-height:.98;letter-spacing:-2px;margin:18px 0}.hero h1 span{color:#39d894}.hero p{max-width:530px;color:#c0d8cd;line-height:1.8;font-size:14px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.outline{background:transparent;border:1px solid #7ac9a7;color:#fff}
+.hero-art{min-height:330px;border-radius:25px;background:linear-gradient(140deg,#dcebe2,#86b9a0);color:#073b2c;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hero-art:before{content:"S✳";font-size:clamp(90px,15vw,160px);font-weight:900;color:#08794e;opacity:.85}.hero-art:after{content:"MALHARIA • BORDADOS • UNIFORMES";position:absolute;bottom:25px;letter-spacing:2px;font-size:10px;font-weight:bold}
+.ticker{background:var(--green);color:#03251b;font-size:12px;font-weight:900;letter-spacing:2px;padding:13px;text-align:center}
+section{padding:65px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.head h2{font-size:clamp(29px,4vw,46px);line-height:1;margin:12px 0 0}.head p{max-width:440px;color:#a9c6ba;line-height:1.7;font-size:13px;margin:0}
+.catalog{background:var(--cream);color:var(--ink)}.catalog .head p{color:#61776c}.filters{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 22px}.filter{border:1px solid #bfd6c9;border-radius:30px;padding:10px 15px;color:#1a5741;background:#fff;font-weight:800;font-size:11px;cursor:pointer}.filter.active,.filter:hover{background:#087b50;color:#fff;border-color:#087b50}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product{background:#fff;border:1px solid #e0e9e3;border-radius:17px;overflow:hidden;box-shadow:0 8px 25px #082d2310;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.product:hover{transform:translateY(-4px);box-shadow:0 16px 32px #082d2320}.product[hidden]{display:none}.product img{width:100%;height:290px;object-fit:cover;background:#e2eee7}.product>img{width:100%;height:290px;object-fit:cover;display:block;background:#e2eee7;cursor:zoom-in}.product>img:focus{outline:3px solid #08a36a;outline-offset:-3px}.placeholder{height:175px;display:grid;place-items:center;background:linear-gradient(140deg,#d6eee1,#88bba2);font-size:48px;color:#087b50}.pbody{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.pbody h3{font-size:16px;margin:0}.pbody p{font-size:11px;color:#64786e;line-height:1.5;margin:0}.tag{font-size:9px;font-weight:900;letter-spacing:1px;color:#087b50}.pbody .btn{margin-top:auto;width:100%}
+.config{background:#0a382d}.config-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px;align-items:start}.config-info{position:sticky;top:100px}.config-info h2{font-size:clamp(30px,4vw,44px);line-height:1;margin:13px 0}.config-info p{font-size:13px;color:#b5d0c4;line-height:1.8}.steps{margin-top:25px;display:grid;gap:12px}.step{display:flex;gap:12px;align-items:center;font-size:12px;color:#e2f3ea}.step b{display:grid;place-items:center;min-width:30px;height:30px;border-radius:50%;background:#0b8557;color:#fff}
+form{background:#f8faf6;color:var(--ink);padding:26px;border-radius:20px;box-shadow:0 20px 50px #0002}.form-title{font-size:20px;font-weight:900;margin:0 0 5px}.form-sub{font-size:12px;color:#64786e;line-height:1.6;margin:0 0 20px}.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{margin-bottom:15px}.field label{display:block;font-size:10px;font-weight:900;letter-spacing:.6px;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;border:1px solid #d5e2da;border-radius:9px;padding:12px;font:inherit;font-size:13px;background:#fff;color:#15382b;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#08a36a;box-shadow:0 0 0 3px #08a36a18}.field textarea{min-height:80px;resize:vertical}.radio-row{display:flex;gap:16px;flex-wrap:wrap}.radio-row label{font-size:12px;font-weight:600;letter-spacing:0;display:flex;align-items:center;gap:7px}.uploadbox{border:1px dashed #8ebaa4;border-radius:12px;padding:15px;background:#eef8f1}.uploadbox small{display:block;color:#5c7669;font-size:11px;line-height:1.6;margin-top:8px}.uploadbox input{border:0;padding:5px 0;background:transparent}.conditional{display:none}.conditional.show{display:block}.summary{background:#e7f4eb;border-radius:10px;padding:14px;margin:14px 0;font-size:12px;line-height:1.7;color:#1d5740}.form-actions{display:flex;gap:10px;flex-wrap:wrap}.form-actions .btn{flex:1}.secondary{background:#e1ece5;color:#204b3b}
+.gallery{background:#f4f5ef;color:var(--ink)}.refs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.refs img{width:100%;height:180px;object-fit:cover;border-radius:13px;border:1px solid #dbe5df}
+footer{padding:35px 0;background:#031b17;color:#b8d3c7}.footrow{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}footer p{font-size:11px;line-height:1.7}.footlinks{display:flex;gap:15px;font-size:12px;color:#70dfad}
+@media(max-width:850px){.navlinks{display:none}.hero-grid,.config-grid{grid-template-columns:1fr}.config-info{position:static}.products{grid-template-columns:repeat(2,1fr)}.product img,.product>img{height:250px}.refs{grid-template-columns:repeat(2,1fr)}.hero-art{min-height:250px}}
+@media(max-width:520px){.top .wrap{justify-content:center}.products{grid-template-columns:1fr 1fr;gap:9px}.product>img,.product img,.placeholder{height:190px}.pbody{padding:12px}.pbody h3{font-size:14px}.row{grid-template-columns:1fr;gap:0}form{padding:18px}.head{align-items:start;flex-direction:column}section{padding:48px 0}.refs img{height:125px}}
+
+/* Visualização ampliada dos produtos */
+.product-photo-hint{font-size:10px;color:#087b50;font-weight:800;letter-spacing:.4px;margin-top:2px}
+.product-modal{position:fixed;inset:0;z-index:1000;background:rgba(0,18,14,.88);display:none;align-items:center;justify-content:center;padding:24px;overflow:auto}
+.product-modal.open{display:flex}
+.modal-card{width:min(900px,100%);max-height:94vh;overflow:auto;background:#f8faf6;color:#12352b;border-radius:20px;position:relative;box-shadow:0 25px 80px #0007}
+.modal-close{position:sticky;top:10px;float:right;z-index:2;margin:10px 10px -48px 0;width:40px;height:40px;border:0;border-radius:50%;background:#062a24;color:#fff;font-size:25px;cursor:pointer}
+.modal-image-wrap{background:#e5eee8;display:flex;justify-content:center;align-items:center;max-height:68vh;min-height:240px}
+.modal-image{display:block;width:100%;max-height:68vh;object-fit:contain}
+.modal-copy{padding:24px 28px 28px}.modal-tag{font-size:10px;font-weight:900;letter-spacing:2px;color:#078451}.modal-copy h3{font-size:clamp(24px,4vw,36px);margin:8px 0}.modal-copy p{font-size:14px;line-height:1.8;color:#526b5e;margin:0 0 18px}.modal-actions{display:flex;gap:10px;flex-wrap:wrap}.modal-actions .btn{min-width:190px}
+@media(max-width:520px){.product-modal{padding:10px}.modal-card{max-height:96vh;border-radius:15px}.modal-image-wrap{max-height:58vh}.modal-image{max-height:58vh}.modal-copy{padding:18px}.modal-actions .btn{width:100%}}
+
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>SARITAS MALHARIA E BORDADOS</span><span>Uniformes profissionais • Personalização • Bordados</span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#inicio"><span class="logo"><img src="assets/scrub-azul.jpg" alt="Foto de uniforme profissional Saritas"></span><span>SARITAS<small>MALHARIA & BORDADOS</small></span></a>
+<nav class="navlinks"><a href="#inicio">Início</a><a href="#catalogo">Catálogo</a><a href="#configurar">Monte seu pedido</a><a href="#contato">Contato</a></nav>
+<a class="btn" href="https://wa.me/68996140548" target="_blank" rel="noreferrer">WHATSAPP ↗</a>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="wrap hero-grid"><div>
+<div class="eyebrow">Sua profissão, sua identidade</div>
+<h1>UNIFORMES COM<br><span>SEU ESTILO.</span></h1>
+<p>Escolha a categoria, o modelo, o tamanho e a opção de bordado. Monte seu pedido e envie as informações diretamente para a Saritas pelo WhatsApp.</p>
+<div class="hero-actions"><a class="btn" href="#catalogo">VER CATÁLOGO ↓</a><a class="btn outline" href="#configurar">PERSONALIZAR PEDIDO</a></div>
+</div><div class="hero-art" aria-label="Identidade visual Saritas"></div></div></section>
+<div class="ticker">SARITAS ✳ MALHARIA ✳ JALECOS ✳ SCRUBS ✳ BORDADOS ✳ FARDAMENTOS ✳</div>
+<section class="catalog" id="catalogo"><div class="wrap">
+<div class="head"><div><div class="eyebrow">Catálogo de produtos</div><h2>ESCOLHA SEU MODELO.</h2></div><p>Use os filtros para encontrar a categoria. Os detalhes de tamanho, público e bordado são definidos no configurador.</p></div>
+<div class="filters" id="filters">
+<button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="jalecos">Jalecos</button><button class="filter" data-filter="scrubs">Pijamas cirúrgicos / Scrubs</button><button class="filter" data-filter="fardamento">Fardamento empresarial</button><button class="filter" data-filter="social">Camisa social</button><button class="filter" data-filter="polo">Camisa polo</button><button class="filter" data-filter="malha">Camisas em malha</button>
+</div>
+<div class="products">
+<article class="product" data-category="jalecos"><img src="assets/jaleco-medico.jpg" alt="Jaleco profissional" loading="lazy"><div class="pbody"><span class="tag">01 / JALECOS</span><h3>Jaleco profissional</h3><p>Modelos femininos ou masculinos. Consulte cores, tecidos e opções de bordado.</p><button class="btn choose" data-type="Jaleco profissional">CONFIGURAR MODELO</button></div></article>
+<article class="product" data-category="scrubs"><img src="assets/scrub-estampado.jpg" alt="Pijama cirúrgico estampado" loading="lazy"><div class="pbody"><span class="tag">02 / SCRUBS</span><h3>Pijama cirúrgico / Scrub</h3><p>Conjuntos profissionais em diferentes cores e modelagens.</p><button class="btn choose" data-type="Pijama cirúrgico / Scrub">CONFIGURAR MODELO</button></div></article>
+<article class="product" data-category="fardamento"><img src="assets/arara-uniformes.jpg" alt="Fardamento empresarial" loading="lazy"><div class="pbody"><span class="tag">03 / EMPRESARIAL</span><h3>Fardamento empresarial</h3><p>Solicite apenas camisas ou consulte outras opções de uniforme.</p><button class="btn choose" data-type="Fardamento empresarial">CONFIGURAR MODELO</button></div></article>
+<article class="product" data-category="social"><img src="assets/uniforme-branco.jpg" alt="Camisa social profissional" loading="lazy"><div class="pbody"><span class="tag">04 / SOCIAL</span><h3>Camisa social</h3><p>Manga curta ou manga longa, com bordado ou sem bordado.</p><button class="btn choose" data-type="Camisa social">CONFIGURAR MODELO</button></div></article>
+<article class="product" data-category="polo"><img src="assets/scrub-masculino.jpg" alt="Camisa polo profissional" loading="lazy"><div class="pbody"><span class="tag">05 / POLO</span><h3>Camisa polo</h3><p>Escolha a modelagem e defina se deseja incluir bordado personalizado.</p><button class="btn choose" data-type="Camisa polo">CONFIGURAR MODELO</button></div></article>
+<article class="product" data-category="malha"><img src="assets/tecido-e-malharia.jpg" alt="Camisa em malha" loading="lazy"><div class="pbody"><span class="tag">06 / MALHA</span><h3>Camisa em malha</h3><p>Opções de PP, cacharrel ou algodão, conforme disponibilidade.</p><button class="btn choose" data-type="Camisa em malha">CONFIGURAR MODELO</button></div></article>
+<article class="product" data-category="scrubs"><img src="assets/scrubs-cores.jpg" alt="Scrub colorido" loading="lazy"><div class="pbody"><span class="tag">07 / CORES</span><h3>Scrub colorido</h3><p>Consulte cores como azul, preto, vinho, verde, rosa, lilás e outras.</p><button class="btn choose" data-type="Pijama cirúrgico / Scrub">CONFIGURAR MODELO</button></div></article>
+<article class="product" data-category="jalecos"><img src="assets/jaleco-estampado.jpg" alt="Jaleco personalizado" loading="lazy"><div class="pbody"><span class="tag">08 / PERSONALIZADO</span><h3>Jaleco bordado</h3><p>Inclua nome, profissão, logotipo ou arte, conforme análise do arquivo.</p><button class="btn choose" data-type="Jaleco profissional">CONFIGURAR MODELO</button></div></article>
+</div>
+</div></section>
+<section class="config" id="configurar"><div class="wrap config-grid">
+<div class="config-info"><div class="eyebrow">Pedido personalizado</div><h2>MONTE SEU PEDIDO.</h2><p>Defina as características do produto. Se selecionar bordado, será exibido o campo para anexar sua arte ou referência. Ao finalizar, o WhatsApp abrirá com o resumo do pedido.</p>
+<div class="steps"><div class="step"><b>1</b> Escolha o modelo e a categoria</div><div class="step"><b>2</b> Defina tamanho, público e detalhes</div><div class="step"><b>3</b> Se quiser bordado, anexe a arte</div><div class="step"><b>4</b> Envie o resumo pelo WhatsApp</div></div>
+</div>
+<form id="orderForm">
+<h3 class="form-title">Configure seu produto</h3><p class="form-sub">Preencha os campos para preparar seu pedido para a equipe Saritas.</p>
+<div class="row">
+<div class="field"><label for="customer">SEU NOME *</label><input id="customer" required placeholder="Nome completo"></div>
+<div class="field"><label for="productType">CATEGORIA / MODELO *</label><select id="productType" required><option value="">Selecione</option><option>Jaleco profissional</option><option>Pijama cirúrgico / Scrub</option><option>Fardamento empresarial</option><option>Camisa social</option><option>Camisa polo</option><option>Camisa em malha</option></select></div>
+</div>
+<div class="row">
+<div class="field"><label for="gender">MODELAGEM / PÚBLICO *</label><select id="gender" required><option value="">Selecione</option><option>Feminino</option><option>Masculino</option><option>Unissex</option></select></div>
+<div class="field"><label for="size">TAMANHO *</label><select id="size" required><option value="">Selecione</option><option>PP</option><option>P</option><option>M</option><option>G</option><option>GG</option><option>XG</option><option>EGG</option></select></div>
+</div>
+<div class="row">
+<div class="field" id="sleeveField"><label for="sleeve">MANGA / MODELO</label><select id="sleeve"><option>Não se aplica</option><option>Manga curta</option><option>Manga longa</option><option>Tradicional</option><option>Com babado</option></select></div>
+<div class="field" id="fabricField"><label for="fabric">TECIDO / MATERIAL</label><select id="fabric"><option>Consultar disponibilidade</option><option>PP</option><option>Cacharrel</option><option>Algodão</option><option>Gabardine</option><option>Outro / a consultar</option></select></div>
+</div>
+<div class="row">
+<div class="field"><label for="color">COR DESEJADA</label><select id="color"><option>A combinar / consultar</option><option>Branco</option><option>Preto</option><option>Azul-marinho</option><option>Azul-claro</option><option>Azul-petróleo</option><option>Verde</option><option>Verde-água</option><option>Rosa</option><option>Lilás / roxo</option><option>Vinho</option><option>Outra cor</option></select></div>
+<div class="field"><label for="quantity">QUANTIDADE *</label><input id="quantity" type="number" min="1" value="1" required></div>
+</div>
+<div class="field"><label>DESEJA BORDADO? *</label><div class="radio-row"><label><input type="radio" name="embroidery" value="Sim" required> Sim, com bordado</label><label><input type="radio" name="embroidery" value="Não"> Não, sem bordado</label></div></div>
+<div id="embroideryOptions" class="conditional">
+<div class="row">
+<div class="field"><label for="embroideryPosition">LOCAL DO BORDADO</label><select id="embroideryPosition"><option>Peito / lado esquerdo</option><option>Peito / lado direito</option><option>Manga</option><option>Costas</option><option>Mais de um local</option><option>A combinar</option></select></div>
+<div class="field"><label for="artName">NOME / TEXTO A BORDAR</label><input id="artName" placeholder="Nome, profissão ou empresa"></div>
+</div>
+<div class="field uploadbox"><label for="artFile">ANEXAR LOGO OU ARTE (OPCIONAL)</label><input id="artFile" type="file" accept=".png,.jpg,.jpeg,.webp,.pdf,.cdr,.psd,.ai,.eps,.svg"><small>Formatos aceitos pelo seletor: imagens, PDF, CDR, PSD, AI, EPS e SVG. O arquivo fica selecionado neste navegador. Para enviar, o WhatsApp abrirá com o nome do arquivo; anexe o arquivo manualmente na conversa. Arquivos CDR/PSD podem precisar ser enviados como documento.</small></div>
+</div>
+<div class="field"><label for="notes">OBSERVAÇÕES / MEDIDAS / DETALHES</label><textarea id="notes" placeholder="Ex.: nome para bordar, empresa, preferência de tecido, prazo desejado..."></textarea></div>
+<div id="summary" class="summary">Seu resumo do pedido aparecerá aqui conforme você preencher os campos.</div>
+<div class="form-actions"><button type="submit" class="btn">ENVIAR PEDIDO PELO WHATSAPP ↗</button><button type="reset" class="btn secondary">LIMPAR</button></div>
+<p style="font-size:10px;color:#6b8076;line-height:1.6;margin:14px 0 0">Preços, prazos, estoque e disponibilidade são confirmados pela Saritas no atendimento.</p>
+</form>
+</div></section>
+<section class="gallery"><div class="wrap"><div class="head"><div><div class="eyebrow">Referências visuais</div><h2>MODELOS E CORES.</h2></div><p>Mantivemos as fotos de produtos que já estavam na versão anterior do catálogo, agora junto com o configurador de pedidos.</p></div><div class="refs">
+<img src="assets/scrub-turquesa-modelo.jpg" alt="Scrub turquesa usado como referência" loading="lazy">
+<img src="assets/scrub-rosa.jpg" alt="Scrub rosa" loading="lazy">
+<img src="assets/jaleco-medico.jpg" alt="Jaleco profissional" loading="lazy">
+<img src="assets/scrub-azul-marinho.jpg" alt="Scrub azul-marinho" loading="lazy">
+<img src="assets/scrub-vinho.jpg" alt="Scrub vinho" loading="lazy">
+<img src="assets/jaleco-estampado.jpg" alt="Jaleco estampado" loading="lazy">
+<img src="assets/conjuntos-coloridos.jpg" alt="Conjuntos profissionais coloridos" loading="lazy">
+<img src="assets/bordado-nome.jpg" alt="Bordado personalizado" loading="lazy">
+</div></div></section>
+<section id="contato" style="padding:42px 0;background:#0a382d"><div class="wrap footrow"><div><div class="eyebrow">Fale com a Saritas</div><h2 style="margin:10px 0">Vamos preparar seu pedido?</h2><p style="color:#b7d0c6;font-size:13px">Tire dúvidas sobre modelos, tamanhos, bordados, preços e prazos.</p></div><a class="btn" href="https://wa.me/68996140548" target="_blank" rel="noreferrer">WHATSAPP: (68) 99614-0548 ↗</a></div></section>
+</main>
+
+<div class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="modalProductTitle">
+ <div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Fechar visualização">×</button>
+  <div class="modal-image-wrap"><img class="modal-image" id="modalProductImage" src="" alt=""></div>
+  <div class="modal-copy"><span class="modal-tag" id="modalProductTag">SARITAS • CATÁLOGO</span><h3 id="modalProductTitle">Produto</h3><p id="modalProductDescription">Descrição do produto.</p><div class="modal-actions"><button class="btn" id="modalConfigure">CONFIGURAR ESTE MODELO</button><button class="btn secondary" id="modalBack">VOLTAR AO CATÁLOGO</button></div></div>
+ </div>
+</div>
+<footer><div class="wrap footrow"><a class="brand" href="#inicio"><span class="logo"><img src="assets/scrub-azul.jpg" alt="Foto de uniforme profissional Saritas"></span><span>SARITAS<small>MALHARIA & BORDADOS</small></span></a><div class="footlinks"><a href="https://www.instagram.com/saritas_malharia_e_bordados/" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://wa.me/68996140548" target="_blank" rel="noreferrer">WHATSAPP ↗</a></div><p>Catálogo e configurador de pedidos.<br>Disponibilidade e valores sob consulta.</p></div></footer>
+<script>
+const WA_NUMBER = "68996140548";
+const form = document.getElementById("orderForm");
+const embroideryOptions = document.getElementById("embroideryOptions");
+const artFile = document.getElementById("artFile");
+const summary = document.getElementById("summary");
+const fields = ["customer","productType","gender","size","sleeve","fabric","color","quantity","embroideryPosition","artName","notes"];
+function getEmbroidery(){return document.querySelector('input[name="embroidery"]:checked')?.value || ""}
+function currentSummary(){
+ const val = id => document.getElementById(id)?.value || "";
+ const file = artFile.files && artFile.files[0] ? artFile.files[0].name : "Nenhum arquivo selecionado";
+ return `Cliente: ${val("customer")||"—"} | Produto: ${val("productType")||"—"} | Modelagem: ${val("gender")||"—"} | Tamanho: ${val("size")||"—"} | Manga/modelo: ${val("sleeve")||"—"} | Tecido: ${val("fabric")||"—"} | Cor: ${val("color")||"—"} | Quantidade: ${val("quantity")||"—"} | Bordado: ${getEmbroidery()||"—"}${getEmbroidery()==="Sim" ? " | Local: "+val("embroideryPosition")+" | Texto: "+(val("artName")||"Não informado")+" | Arte: "+file : ""} | Observações: ${val("notes")||"—"}`;
+}
+function updateSummary(){summary.textContent=currentSummary().replaceAll(" | ","\n");summary.style.whiteSpace="pre-line";}
+document.querySelectorAll('input[name="embroidery"]').forEach(el=>el.addEventListener("change",()=>{
+ embroideryOptions.classList.toggle("show",getEmbroidery()==="Sim");
+ artFile.required=false; updateSummary();
+}));
+form.querySelectorAll("input,select,textarea").forEach(el=>el.addEventListener("input",updateSummary));
+form.querySelectorAll("input,select,textarea").forEach(el=>el.addEventListener("change",updateSummary));
+document.querySelectorAll(".choose").forEach(btn=>btn.addEventListener("click",()=>{
+ document.getElementById("productType").value=btn.dataset.type;
+ document.getElementById("configurar").scrollIntoView({behavior:"smooth"});
+ updateSummary();
+}));
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
+ document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b===btn));
+ document.querySelectorAll(".product").forEach(card=>card.hidden=btn.dataset.filter!=="todos"&&card.dataset.category!==btn.dataset.filter);
+}));
+form.addEventListener("reset",()=>setTimeout(()=>{embroideryOptions.classList.remove("show");updateSummary()},0));
+form.addEventListener("submit",e=>{
+ e.preventDefault();
+ if(!form.reportValidity()) return;
+ const file = artFile.files && artFile.files[0] ? artFile.files[0].name : "Nenhum arquivo selecionado";
+ const message = `Olá, Saritas! Gostaria de solicitar um orçamento.\n\n${currentSummary()}\n\n${getEmbroidery()==="Sim" ? "Desejo bordado. O arquivo selecionado no site é: "+file+". Vou anexar a arte manualmente nesta conversa do WhatsApp." : ""}\n\nPor favor, confirmem disponibilidade, valor e prazo.`;
+ window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`,"_blank","noopener");
+});
+
+// Ao clicar na foto do produto, abrir visualização ampliada com descrição abaixo.
+const productModal = document.getElementById("productModal");
+const modalImage = document.getElementById("modalProductImage");
+const modalTitle = document.getElementById("modalProductTitle");
+const modalDescription = document.getElementById("modalProductDescription");
+const modalTag = document.getElementById("modalProductTag");
+let activeProductType = "";
+function openProductModal(card){
+ const img=card.querySelector("img"); const title=card.querySelector("h3")?.textContent || "Produto Saritas";
+ const desc=card.querySelector(".pbody p")?.textContent || "Consulte detalhes, tamanhos, cores e disponibilidade com a Saritas.";
+ const tag=card.querySelector(".tag")?.textContent || "SARITAS • CATÁLOGO";
+ activeProductType=card.querySelector(".choose")?.dataset.type || title;
+ modalImage.src=img?.src || ""; modalImage.alt=title; modalTitle.textContent=title; modalDescription.textContent=desc+" Consulte a equipe Saritas para confirmar tecidos, cores, tamanhos, valores e prazo de produção."; modalTag.textContent=tag;
+ productModal.classList.add("open"); document.body.style.overflow="hidden"; document.getElementById("modalClose").focus();
+}
+function closeProductModal(){productModal.classList.remove("open");document.body.style.overflow="";}
+document.querySelectorAll(".product > img").forEach(img=>{img.tabIndex=0;img.setAttribute("role","button");img.setAttribute("aria-label","Ampliar foto e ver descrição de "+(img.alt||"produto"));img.title="Clique para ampliar e ver a descrição";img.addEventListener("click",()=>openProductModal(img.closest(".product")));img.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();openProductModal(img.closest(".product"));}});});
+document.getElementById("modalClose").addEventListener("click",closeProductModal);
+document.getElementById("modalBack").addEventListener("click",closeProductModal);
+productModal.addEventListener("click",e=>{if(e.target===productModal)closeProductModal();});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&productModal.classList.contains("open"))closeProductModal();});
+document.getElementById("modalConfigure").addEventListener("click",()=>{document.getElementById("productType").value=activeProductType;closeProductModal();document.getElementById("configurar").scrollIntoView({behavior:"smooth"});updateSummary();});
+
+updateSummary();
+</script>
+</body></html>
